@@ -1,0 +1,98 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 40px 100px 200px 100px 30px;
+    width: 850px;
+    margin: auto;
+    grid-gap: 10px; 
+    font-family: 'Open Sans', sans-serif;
+}
+.menu {
+    background: #fcfdfe;       
+    grid-column: 1/5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    /* display: grid; */
+    /* grid-template-columns: repeat(5, 1fr); */
+}
+.menu_content{
+    grid-column-start: 3;
+    text-align: center;
+    margin-top: 2px;
+}
+.menu_content img {
+    width: 12%;
+}
+.sidebar {
+    background: #ee693f;  
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-end: 1/2;  
+    color:#ffffff;
+}
+.profile img {
+    width: 50%;
+    max-width: 100%;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #fbf8f8;
+}
+.profile {
+    text-align: center;
+    margin-top: 15px;
+}
+.konten {
+    background: #f69454;  
+    grid-column: 2/5;
+    text-align: center;
+}
+#last {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    color: fbf8f8;
+}
+#linkJS a {
+    margin-top: 30px;
+    padding-top: 4px;
+    background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+	font-size:17px;
+	padding:14px 58px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+   
+}
+#linkJS a:hover {
+    background-color:#f5a80e;
+}
+#linkJS a:active {
+    position:relative;
+	top:1px;
+}
+.footer {
+    background: #44c767;  
+    grid-column: 1/5;
+    grid-row: 5/5;
+
+}
+.footer p {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+    color: #fbf8f8;
+    font-family: 'Pacifico', cursive;
+}
+
+/* MapBox  */
+
+#mapid { 
+    height: 180px;
+}
